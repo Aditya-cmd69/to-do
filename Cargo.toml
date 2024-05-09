@@ -1,0 +1,15 @@
+[package]
+name = "todo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"] 
+
+[dependencies]
+soroban-sdk = "=20.5.0"  # Adjust the version to the latest if needed
+
+[profile.release]
+lto = true  # Enables optimizations for release builds
